@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <style>
+        .error-message {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <label for="userId">User ID:</label>
+        <input type="text" id="userId" name="userId" required><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br>
+
+        <span class="error-message" id="loginError"></span><br>
+        <button onclick="checkLogin()">Login</button>
+    </div>
+
+    <script>
+        function checkLogin() {
+            const userId = document.getElementById("userId").value;
+            const password = document.getElementById("password").value;
+            const errorMessage = document.getElementById("loginError");
+            const correctUserId = "user123";  
+            const correctPassword = "pass123";
+
+            if (userId === correctUserId && password === correctPassword) {
+                window.location.href = "file:///C:/Users/natar/OneDrive/Pictures/Screenshots/react%20js/html(video.pic).html"; 
+            } else {
+                errorMessage.innerText = "Invalid User ID or Password!";
+            }
+        }
+    </script>
+</body>
+</html>
