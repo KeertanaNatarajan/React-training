@@ -28,7 +28,7 @@ function App() {
         {activeSection === 'photography' && (
           <div className="content">
             <h2>Photography</h2>
-            <img src={myImage} alt="C:\Users\natar\OneDrive\Desktop\React\game\src\pic\dp.png" /> {/* Use the imported image */}
+            <img src={myImage} alt="C:\Users\natar\OneDrive\Desktop\React\game\src\pic\dp.png" /> 
           </div>
         )}
         {activeSection === 'resume' && (
