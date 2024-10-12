@@ -1,13 +1,13 @@
 import React, { useState } from 'react';
-import './App.css'; // Import the CSS file
+import './App.css'; 
 import myImage from './pic/dp.png';
-import myimage from './pic/resume.png';// Import the image
+import myimage from './pic/resume.png';
 
 function App() {
-  const [activeSection, setActiveSection] = useState(''); // State to track the active section
+  const [activeSection, setActiveSection] = useState(''); 
 
   const handleButtonClick = (section) => {
-    setActiveSection(section); // Update the active section based on button click
+    setActiveSection(section); 
   };
 
   return (
